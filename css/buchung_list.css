@@ -1,0 +1,173 @@
+body{
+    background-color: #1e212f;
+    
+    margin: 0;
+    padding: 0; 
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    height: 100vh;
+
+
+}
+
+@font-face{
+    font-family: 'myFirstFont';
+    src: url(../font/MountainsofChristmas.ttf);
+}
+h2{
+    margin-left: 630px;
+    color: #bbaab8;
+    font-family: 'myFirstFont';
+    font-size: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #151822;
+    border: solid #292643;
+}
+#logo{
+    width: 20px 20px;
+}
+
+.header ul{
+    text-align: right;
+    padding-top: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.header li::before{
+    content: "|";
+    color:#bbaab8;
+    padding-right: 35px;
+}
+.header li:first-child::before{
+    content: "";
+    padding: 0;
+}
+
+.header li:last-child{
+    margin-right: 100px;
+}
+
+.header li{
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+.header a{
+    color: #bbaab8;
+}
+.header li:hover{
+    text-decoration: underline;
+    color: #bbaab8;
+}
+
+
+
+#logo{
+    color: #bbaab8;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+
+
+nav ul li a{
+    text-decoration: none;
+}
+
+
+
+#goback{
+    margin-left: 130px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+   
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    color: #bbaab8;
+    background-color: #b32323;
+    border-color: #b32323;
+}
+#goback a{
+    text-decoration: none;
+    color: #bbaab8;
+}
+
+#goback a:hover{
+    color: #b32323;
+}
+
+#goback:hover{
+    border-color: #b32323;
+     background-color: transparent;
+}
+#btnGoBack{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.table td{
+    background-color: #bbaab851 ;
+    padding: 30px 30px;
+    
+}
+
+.table td:first-child {
+    border-radius: 25px 0px 0px 25px;
+  }
+
+.table td:last-child {
+    border-radius: 0px 25px 25px 0px;
+}
+
+.table tr:hover {
+    background-color: black;
+    transition: all 0.6s ease;
+    border: #bbaab8 solid 1px;   
+}
+
+.table tr:hover td{
+    
+    transition: all 0.6s ease;
+    border-bottom: #bbaab8 solid 1px;
+    border-top:#bbaab8 solid 1px ;
+}
+
+#erst{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+tr.border_bottom td {
+    border-bottom: 1px solid black;
+}
+
+
+
+.table{
+    
+    margin: auto;
+    color: #ffffff51;
+    border-spacing: 0 20px; /* отступы между строками */
+    font-size: 20px;
+    font-weight: normal;
+    
+}

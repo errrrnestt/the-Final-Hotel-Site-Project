@@ -1,0 +1,246 @@
+body{
+    background-image: url(../Photos/background.jpg); 
+}
+
+@font-face{
+    font-family: 'myFirstFont';
+    src: url(../font/MountainsofChristmas.ttf);
+}
+h2{
+    text-align: center;
+    color: #bbaab8;
+    font-family: 'myFirstFont';
+    font-size: 50px;
+}
+
+
+.room{
+    display: none;
+}
+.room.visible{
+    display: block;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #151822;
+    border: solid #292643;
+}
+
+
+.header ul{
+    display: inline;
+    padding-top: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#custom-button{
+    margin-right: 150px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #b32323;
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #ddd;
+}
+
+#custom-button:hover{
+    color: #b32323;
+    background-color: transparent;
+    border-color: #b32323;
+}
+
+
+#goback{
+    margin-left: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+   
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    color: #e5d6d6;
+    background-color: #292643;
+    border-color: #292643;
+}
+#goback{
+    text-decoration: none;
+    color: #e5d6d6;
+}
+
+#goback:hover{
+     background-color: #b32323;
+}
+#btnGoBack{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.room img{
+    width: 250px;
+}
+
+
+#battons{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    color: #ddd;
+    font-size: 20px;
+}
+
+.header img{
+     width: 20px 20px; 
+}
+
+.header li::before{
+    content: "|";
+    color:#bbaab8;
+    padding-right: 35px;
+    padding-left: 35px;
+
+}
+
+.header li:first-child::before{
+    content: "";
+    padding: 0;
+}
+
+.header li{
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+
+.header a{
+    color: #bbaab8;
+}
+
+.header a:hover{
+    
+    text-decoration: underline;
+    color: #bbaab8;
+    transition: all 0.3s ease; 
+}
+
+nav ul li a{
+    color: #bbaab8;
+    text-decoration: none;
+}
+
+
+
+.tabelle{
+    margin-left: 8%;
+    margin-right: 0%;
+}
+
+
+.tabelle td{
+
+    justify-content: space-between;
+    display: inline-table;
+    padding: 10px 10px 10px 10px;
+    border: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border: 2px #151822;
+    
+   
+}
+
+.tabelle td:hover{
+    border-radius: 15px;
+    transition: all 0.3s ease; 
+    background-color: #bbaab8;
+
+}
+
+.tabelle div{
+
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: 2px solid #b32323;
+    border-radius: 15px; 
+    margin-bottom: 10px;
+    color: #ddd;
+    
+}
+
+td[room-status="verfügbar"] div{
+    border: 2px solid #0dc116c9;
+}
+
+td[room-status="verfügbar"] div:hover{
+    background-color: #0dc116c9;
+    transition: all 0.3s ease;
+}
+
+td[room-status="belegt"] div:hover {
+    background-color: #b32323; /* Зеленый цвет при наведении на div */
+    transition: all 0.3s ease;
+}
+
+.tabelle img{
+
+    border-radius: 10px;
+    border: 1px solid #151822;
+    
+
+}
+
+.filters button{
+    
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+   
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    color: #e4e1ff;
+    background-color: #b32323;
+    border-color: #b32323;
+}
+.filters{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.filters{
+    margin-left: 1000px;
+}
+
+
+
+
+
+
+

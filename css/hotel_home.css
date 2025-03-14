@@ -1,0 +1,200 @@
+
+body{
+    background-color: #1e212f;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../Photos/background.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    height: 100vh;
+
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #151822;
+    border: solid #292643;
+}
+#logo{
+    width: 20px 20px;
+}
+
+.header ul{
+    text-align: right;
+    padding-top: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.header li::before{
+    content: "|";
+    color:#bbaab8;
+    padding-right: 35px;
+}
+.header li:first-child::before{
+    content: "";
+    padding: 0;
+}
+
+.header li:last-child{
+    margin-right: 100px;
+}
+
+.header li{
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+.header a{
+    color: #bbaab8;
+}
+.header li:hover{
+    
+    text-decoration: underline;
+    color: #bbaab8;
+}
+
+
+
+#logo{
+    color: #bbaab8;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+
+
+nav ul li a{
+    text-decoration: none;
+}
+
+
+@font-face{
+    font-family: 'myFirstFont';
+    src: url(../font/MountainsofChristmas.ttf);
+}
+
+h3{
+    font-family: 'myFirstFont';
+    font-size: 50px;
+}
+
+h3{
+    padding-left: 140px;
+    color: #bbaab8;
+}
+
+.main h3:first-child::before{
+    content: "| ";
+}
+#hotelT{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #bbaab8;
+}
+
+
+
+
+#hotelImg{
+    border: #251f1b solid 5px;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+#rghtSide{
+    padding-left: 200px;
+}
+
+
+
+
+
+
+
+
+/*BUTTONS DESIGN */
+
+.ZimmernAnsehen button{
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #b32323;
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.ZimmernAnsehen button a{
+    color: #bbaab8;
+}
+
+.ZimmernAnsehen button:hover{
+    color: #b32323;
+    background-color: transparent;
+    border-color: #b32323;
+}
+
+
+.ZimmernAnsehen img{
+    margin-bottom: 30px;
+}
+
+
+.buchungBtn{
+    margin-top: 4px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #b32323;
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.buchungBtn a{
+    color: #bbaab8;
+}
+
+.buchungBtn:hover{
+    color: #b32323;
+    background-color: transparent;
+    border-color: #b32323;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+#zimBeispiel{
+    width: 150px;
+}
+
+#rghtSide img{
+    border: #bbaab88b solid 2px;
+    border-radius: 10px;
+} 
+#leftSide img{
+    border: #bbaab88b solid 3px;
+    border-radius: 10px;
+}

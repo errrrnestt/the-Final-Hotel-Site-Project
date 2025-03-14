@@ -1,0 +1,290 @@
+body{
+    background-color: #1e212f;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Photos/background.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    min-height: 100vh;
+
+
+}
+@font-face{
+    font-family: 'myFirstFont';
+    src: url(../font/MountainsofChristmas.ttf);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #151822;
+    border: solid #292643;
+}
+#logo{
+    width: 20px 20px;
+}
+
+.header ul{
+    text-align: right;
+    padding-top: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.header li::before{
+    content: "|";
+    color:#bbaab8;
+    padding-right: 35px;
+}
+.header li:first-child::before{
+    content: "";
+    padding: 0;
+}
+
+.header li:last-child{
+    margin-right: 100px;
+}
+
+#kunde{
+    text-align: center;
+    
+    font-size:20px;
+    
+ }
+
+#checkbox{
+
+    margin-top: 4px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbaab8;
+    border: solid 2px #bbaab8;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+#kunde option {
+    padding: 10px;
+    background-color: #ffffff; /* Цвет фона опций */
+    color: #333; /* Цвет текста */
+    font-size: 16px;
+}
+
+
+#kunde option:checked, option:hover {
+    background-color: #2e2e2e; /* Цвет фона при наведении и выборе */
+    color: #ffffff; /* Цвет текста */
+}
+
+
+#kunde option:disabled, option[selected] {
+    color: #777; /* Цвет для disabled и selected */
+    background-color: #eaeaea; /* Цвет фона для disabled и selected */
+}
+
+.header li{
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+.header a{
+    color: #bbaab8;
+}
+
+.header li:hover{
+    text-decoration: underline;
+    color: #bbaab8;
+}
+
+
+
+#logo{
+    color: #bbaab8;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+
+
+nav ul li a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'myFirstFont';
+    color: #bbaab8;
+    font-weight: bold;
+    text-align: center;
+    padding-top: -20px;
+}
+
+#goback{
+    margin-left: 130px;
+    margin-bottom: 3px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+   
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    color: #e5d6d6;
+    background-color: #292643;
+    border-color: #292643;
+}
+#goback{
+    text-decoration: none;
+    color: #e5d6d6;
+}
+
+#goback:hover{
+     background-color: #b32323;
+}
+#btnGoBack{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+label{
+    color: #e9dddd;
+    max-width: 200px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: rgb(19, 19, 19);
+}
+input,select{
+    width: 100%;
+    padding: 10px;
+    border: #1e212f 3px solid;
+    border-radius: 10px;
+}
+.borderInpt{
+    /*border: #46506f 2px solid;
+    background-color: #46506f;
+    border-radius: 10px;*/
+    background-image: url(images/backgroundDIV.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.buchungBtn{
+    margin-top: 4px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbaab8;
+    border: solid 2px #bbaab8;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.buchungBtn a{
+    color: #b32323;
+}
+
+.buchungBtn:hover{
+    color: #b32323;
+    background-color: #e19c9c;
+    border-color: #b32323;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.cancel{
+    margin-top: 4px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #bbaab8;
+    border: solid 2px #bbaab8;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+.cancel a{
+    color: #b32323;
+}
+.cancel:hover{
+    color: #b32323;
+    background-color: #e19c9c;
+    border-color: #b32323;
+}
+
+.mitfr{
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: #b32323 solid 2px;
+    border-radius: 10px;
+    background-color: #b32323;
+    font-weight: bold;
+}
+.ohnefr{
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: #b32323 solid 2px;
+    border-radius: 10px;
+    background-color: #b32323;
+    font-weight: bold;
+}
+
+.mitfr:hover{
+    color: #b32323;
+    background-color: #e19c9c;
+    border-color: #b32323;
+}
+.ohnefr:hover{
+    color: #b32323;
+    background-color: #e19c9c;
+    border-color: #b32323;
+}
+
+
+
+
+h2{
+    font-family: 'myFirstFont';
+    font-size: 50px;
+}
+
+h2{
+    color: #bbaab8;
+    text-align: center;
+}
+
+

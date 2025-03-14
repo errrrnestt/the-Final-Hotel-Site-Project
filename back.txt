@@ -1,0 +1,21 @@
+ 
+ <script src="jquery.min.js"></script>
+
+<script>
+        $(document).ready(function() {
+            $('#goback').click(function() {
+                window.history.back();
+            });
+        });
+        </script>
+
+<div id="battons">
+        <div id="btnGoBack"><button id="goback">Zurück</button></div>
+        <script>
+        $(document).ready(function() {
+            $('#goback').click(function() {
+                window.history.back();
+            });
+        });
+        </script>
+    </div>
