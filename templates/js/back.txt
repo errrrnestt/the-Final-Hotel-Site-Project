@@ -7,15 +7,21 @@
                 window.history.back();
             });
         });
-        </script>
+</script>
 
 <div id="battons">
+
         <div id="btnGoBack"><button id="goback">Zurück</button></div>
+
         <script>
-        $(document).ready(function() {
-            $('#goback').click(function() {
-                window.history.back();
+
+            $(document).ready(function() {
+                $('#goback').click(function() {
+                    window.history.back();
+                });
             });
-        });
+
         </script>
-    </div>
+</div>
+
+<!-- Не совсем понял, для чего этот текстовый файл, но его тоже отформатировал. -->
