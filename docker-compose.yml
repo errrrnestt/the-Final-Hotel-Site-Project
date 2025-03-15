@@ -1,0 +1,75 @@
+version: '3.8'
+
+# Это конфиг для докера.
+# Запуск приложения: 
+#  - sudo apt update && apt install docker docker-compose
+#  - sudo dockerd
+#  - cd ~/your_project_directory             <-- Замени на твою папку с проектом P.s. Значок "~/"(чит. "Тильда") Означает /home/имя_пользователя_твоего_пользователя_линукс
+#  - docker-compose up --build                                                                                   Это ничто иное, как твоя домашняя директория
+
+# Остановка контейнеров: 
+#  - Ctrl + C
+#  - docker-compose down
+
+# Очистить кеш:
+#  - docker system prune -f 
+
+# Список портов: 
+#  - docker ps
+
+
+services:
+  # Контейнер с приложением
+  php-apache:
+    build: .
+    container_name: php-app
+    restart: always
+    ports:
+      # Порты приложения. Внешний порт: 8080. => Приложение доступно по ссылке https://localhost:8080 (После запуска)
+      - "8080:80"
+    volumes:
+      # Монтируем папку проекта в контейнер. Синтаксис: - /место_локации:/место_назначения
+      - ./templates:/var/www/html                                           # Корень проекта
+      - ./config/apache.conf:/etc/apache2/sites-available/000-default.conf  # Конфиг Apache
+    depends_on:
+      # Зависимости
+      - mysql  
+    environment:
+      # Локальеые переменные среды
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=db_monster_transylvania
+      
+
+  mysql:
+    # Контейнер с базой данных
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_monster_transylvania
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306"
+    volumes:
+      # Монтируем данные с базы данных. Это важно!
+      - mysql_data:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  phpmyadmin:
+    # Админка
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - "8082:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+
+volumes:
+  # Задаем это, чтобы при пересборке данные с БД не удалялись
+  mysql_data:
