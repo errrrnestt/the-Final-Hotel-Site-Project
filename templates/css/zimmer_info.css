@@ -1,30 +1,43 @@
-body{
-    background-image: url(../Photos/background.jpg); 
-    color: #ddd;
+/* ====== General Styles ====== */
 
+/* Set background image and text color */
+body {
+    background-image: url(../Photos/background.jpg);
+    color: #ddd;
 }
 
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+    width: 0px;
+}
 
-@font-face{
+/* Custom font for headings */
+@font-face {
     font-family: 'myFirstFont';
     src: url(../font/MountainsofChristmas.ttf);
 }
-h2{
+
+/* ====== Headings Styles ====== */
+
+/* General heading (h2) styles */
+h2 {
     margin-left: 100px;
     color: #bbaab8;
     font-family: 'myFirstFont';
     font-size: 50px;
+    text-align: center;
 }
 
-#buchungenP{
+/* Booking section heading */
+#buchungenP {
     margin-left: 20px;
     color: #bbaab8;
-    
     font-family: 'myFirstFont';
     font-size: 40px;
 }
 
-.B_ID{
+/* Booking ID message box */
+.B_ID {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 200px;
     color: #bbaab8;
@@ -36,18 +49,16 @@ h2{
     padding-left: 14px;
 }
 
+/* ====== Buttons Styles ====== */
 
-
-
-.custBTN{
+/* Button for booking-related actions */
+.custBTN {
     min-width: 300px;
     margin-top: 5px;
 }
 
-
-
-
-.header{
+/* Navigation header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +67,8 @@ h2{
     border: solid #292643;
 }
 
-.header ul{
+/* Navigation menu */
+.header ul {
     display: inline;
     padding-top: 30px;
     margin-right: 30px;
@@ -64,11 +76,15 @@ h2{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#custom-button{
-    margin-left: 250px;
-    
-    display: inline-block;
-    padding: 10px ;
+/* Buttons inside forms are displayed inline */
+.custom-buttons form {
+    display: inline;
+}
+
+/* Styling for action buttons */
+#custom-button {
+    margin: 10px;
+    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     background-color: #b32323;
@@ -80,229 +96,244 @@ h2{
     color: #ddd;
 }
 
-#custom-button:hover{
+/* Button hover effect */
+#custom-button:hover {
     color: #b32323;
     background-color: transparent;
     border-color: #b32323;
 }
 
-#battons{
+/* ====== Layout Styling ====== */
+
+/* Layout settings for buttons container */
+#battons {
     display: flex;
     justify-content: space-between;
     padding: 0px 0px 0px 100px;
     color: #ddd;
     font-size: 24px;
-   
 }
 
-.header img{
-     width: 20px 20px; 
+/* Navigation icons */
+.header img {
+    width: 20px 20px;
 }
 
-.header li::before{
+/* Styling for list items in the header */
+.header li::before {
     content: "|";
-    color:#bbaab8;
+    color: #bbaab8;
     padding-right: 35px;
     padding-left: 35px;
-
 }
 
-.header li:first-child::before{
+/* Remove the separator for the first list item */
+.header li:first-child::before {
     content: "";
     padding: 0;
 }
 
-.header li{
+/* Header menu items */
+.header li {
     transition: all 0.3s ease;
     font-family: 'Times New Roman', Times, serif;
     display: inline;
 }
 
-.header a{
+/* Styling for header links */
+.header a {
     color: #bbaab8;
 }
 
-.header a:hover{ 
+/* Hover effect for header links */
+.header a:hover {
     text-decoration: underline;
     color: #bbaab8;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
-nav ul li a{
+/* Styling for navigation links */
+nav ul li a {
     color: #bbaab8;
     text-decoration: none;
 }
 
+/* ====== Reviews Section ====== */
+
+/* Scrollable review container */
 .reviews-container {
     width: 500px;
     height: 550px;
-    overflow-y: scroll; /* Вертикальная прокрутка */
-    padding: 10px; 
+    overflow-y: scroll;
+    padding: 10px;
     border-radius: 10px;
 }
 
+/* Single review block */
 .review {
-    display: flex; 
+    display: flex;
     align-items: center;
     margin-bottom: 15px;
     font-size: 20px;
-    border:  1px solid #ddd;
+    border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #ddd;
     color: #151822;
-    line-height: 1.5; /* Межстрочный интервал для улучшения читаемости текста */
+    line-height: 1.5;
 }
 
-.review-info #name{
+/* Styling for review names */
+.review-info #name {
     font-weight: bold;
     font-size: 30px;
 }
 
-.review-info #details{
+/* Styling for review details */
+.review-info #details {
     margin: 20px;
 }
+
+/* Set maximum width for review content */
 .review-info {
-   max-width: 500px;
-   
-   
+    max-width: 500px;
 }
 
-
-.review-info #datum , #name{
+/* Margins for review date and name */
+.review-info #datum,
+#name {
     margin: 10px;
     display: inline;
-
 }
 
-.review-info #custom-button{
-    float: right; 
-    clear: both; 
+/* Positioning the delete button inside reviews */
+.review-info #custom-button {
+    float: right;
+    clear: both;
     margin-right: 30px;
     margin-bottom: 5px;
 }
 
+/* Custom scrollbar for reviews */
 .reviews-container::-webkit-scrollbar {
     width: 80%;
-    scroll-behavior: smooth; /* Плавная прокрутка */
+    scroll-behavior: smooth;
     overflow-y: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-#info{
-   background-color: #ddd;
-   border-radius: 10px;
-   color: #151822;
-   font-size: 20px;
-   padding: 10px;
-   max-width: 100%; /* Ограничиваем ширину текста */
-   margin: 0;
-   line-height: 1.5; /* Межстрочный интервал для улучшения читаемости текста */
-
-
+/* Styling for the info block */
+#info {
+    background-color: #ddd;
+    border-radius: 10px;
+    color: #151822;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 100%;
+    margin: 0;
+    line-height: 1.5;
 }
 
-
-.reviews-container img{
+/* Review avatar styling */
+.reviews-container img {
     border-radius: 100%;
-    border:  1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 10px;
     max-width: 90px;
- 
 }
 
-.reviews-container:hover{
+/* Hover effect for the review container */
+.reviews-container:hover {
     background-color: #b9bbc25c;
-    transition: all 0.5s ease; 
-
+    transition: all 0.5s ease;
 }
 
-#review:hover{
+/* Hover effect for individual reviews */
+#review:hover {
     border: 2px solid #000000b2;
-    transition: all 0.3s ease;  
-
+    transition: all 0.3s ease;
 }
 
-
-
-#review{
+/* Default border for reviews */
+#review {
     border: 2px solid #00000000;
 }
 
+/* ====== Table Styles ====== */
 
-
-.tabelle{
+/* General table styling */
+.tabelle {
     border-collapse: collapse;
     margin: auto;
-    width: 80%; /* Ограничиваем ширину таблицы */
-    max-width: 1200px; /* Максимальная ширина таблицы */
+    width: 80%;
+    max-width: 1200px;
 }
 
+/* Align table content to the top */
 .tabelle td {
     vertical-align: top;
 }
 
-#left img{
+/* Styling for room images */
+#left img {
     padding: 5px;
     border-radius: 20px;
     background-color: #15182200;
     width: 270px;
-
 }
 
-#left img:hover{
+/* Hover effect for room images */
+#left img:hover {
     background-color: #b9bbc25c;
-    transition: all 0.5s ease; 
-
+    transition: all 0.5s ease;
 }
 
+/* Padding for the left section */
 #left {
     padding-right: 30px;
-
 }
 
-#left table{
-    
-margin: auto;
+/* Center the image table */
+#left table {
+    margin: auto;
 }
 
-
-
-#right{
+/* Right section font size */
+#right {
     font-size: 25px;
 }
 
-#goback{
+/* ====== Go Back Button ====== */
+
+#goback {
     margin-left: 100px;
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-   
     border: solid 2px #b32323;
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
     color: #e5d6d6;
     background-color: #292643;
     border-color: #292643;
 }
-#goback{
-    text-decoration: none;
-    color: #e5d6d6;
+
+/* Hover effect for the back button */
+#goback:hover {
+    background-color: #b32323;
 }
 
-#goback:hover{
-     background-color: #b32323;
-}
-#btnGoBack{
+/* Positioning the back button */
+#btnGoBack {
     margin-left: -10px;
     margin-top: 10px;
 }
 
-.anmelden{
+/* ====== Register Button ====== */
+
+.anmelden {
     margin-top: 5px;
     display: inline-block;
     padding: 10px 20px;
@@ -313,16 +344,12 @@ margin: auto;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
     color: #e5d6d6;
     background-color: #b32323;
     border-color: #b32323;
 }
-.anmelden{
-    text-decoration: none;
-    color: #e5d6d6;
-}
 
-.anmelden:hover{
-     background-color:transparent;
+/* Hover effect for register button */
+.anmelden:hover {
+    background-color: transparent;
 }

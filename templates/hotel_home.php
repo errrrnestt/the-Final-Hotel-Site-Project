@@ -1,90 +1,65 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
+    <!-- ====== Meta Tags and External Resources ====== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/hotel_home.css">
-    <script src="js/jquery.min.js"></script>
-    <title>Home page</title>
+    <link rel="stylesheet" href="css/hotel_home.css"> <!-- Link to external CSS file -->
+    <script src="jquery/jquery.min.js"></script> <!-- Link to jQuery script -->
+    <title>Home page</title> <!-- Page title -->
 </head>
 
 <body>
 
-    <div class="header">
+    <!-- ====== Header Section ====== -->
+    <header class="header">
 
-        <header>
+        <!-- Logo container -->
+        <div id="logo"><img src="Photos/logo.png" alt="Logo"></div>
 
-            <div id="logo">
+        <!-- Main navigation -->
+        <nav>
+            <ul>
+                <li><a href="hotel_home.php">Home</a></li>
+                <li><a href="zimmer_list.php">Zimmern</a></li>
+                <li><a href="buchung_list.php">Buchungen</a></li>
+            </ul>
+        </nav>
 
-                <img src="Photos/logo.png" alt="Logo">
+    </header>
 
-            </div>
-
-            <nav>
-
-                <ul>
-
-                    <li>
-                        <a href="hotel_home.php">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="zimmer_list.php">Zimmern</a>
-                    </li>
-
-                    <li>
-                        <a href="buchung_list.php">Buchungen</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </header>
-
-    </div>
-
+    <!-- ====== Main Content Section ====== -->
     <div class="main">
 
-        <h3> Herzlich wilkommen zu unserem Hotel "Transylvania! </h3>
+        <!-- Welcome message -->
+        <h3>HERZLICH WILLKOMMEN ZU UNSEREM HOTEL TRANSELVANIYA</h3>
 
+        <!-- Table for layout -->
         <table>
-
             <tr>
-
+                <!-- Left side with hotel image -->
                 <td id="leftSide">
-
-                    <img src="Photos/hotel.jpg" alt="hotel" id="hotelImg">
-
+                    <img src="Photos/hotel.jpg" alt="hotel" id="hotelImg"> <!-- Hotel image -->
                 </td>
-
+                <!-- Right side with room images and button -->
                 <td id="rghtSide">
-
                     <div class="ZimmernAnsehen">
-
-                        <button><a href="zimmer_list.php"> Zimmern ansehen</a> </button> 
-
-                        <br>
-
-                        <img src="Photos/zimmer1-1.jpg" alt="" id="zimBeispiel">
-                        <img src="Photos/zimmer2-1.jpg" alt="" id="zimBeispiel">
-                        <img src="Photos/zimmer3-1.jpg" alt="" id="zimBeispiel">
-                        <img src="Photos/zimmer4-1.jpg" alt="" id="zimBeispiel"> 
+                        <!-- Button to view rooms -->
+                        <button><a href="zimmer_list.php"> Zimmern ansehen</a> </button> <br>
                         
-                        <br>
-
+                        <!-- Room images -->
+                        <img src="Photos/zimmer1-1.jpg" alt="" id="zimBeispiel"> <!-- Room 1 image -->
+                        <img src="Photos/zimmer2-1.jpg" alt="" id="zimBeispiel"> <!-- Room 2 image -->
+                        <img src="Photos/zimmer3-1.jpg" alt="" id="zimBeispiel"> <!-- Room 3 image -->
+                        <img src="Photos/zimmer4-1.jpg" alt="" id="zimBeispiel"> <!-- Room 4 image -->
                     </div>
-
-
-
                 </td>
-
             </tr>
-
         </table>
 
     </div>
 
 </body>
+
 </html>

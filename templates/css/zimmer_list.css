@@ -1,28 +1,40 @@
-body{
+/* ====== General Styles ====== */
+/* Set background image and hide scrollbar */
+body {
     background-image: url(../Photos/background.jpg); 
 }
 
-@font-face{
+body::-webkit-scrollbar {
+    width: 0px; /* Width of scrollbar (hidden) */
+}
+
+/* ====== Typography ====== */
+/* Custom font declaration */
+@font-face {
     font-family: 'myFirstFont';
     src: url(../font/MountainsofChristmas.ttf);
 }
-h2{
+
+/* Heading styles */
+h2 {
     text-align: center;
     color: #bbaab8;
     font-family: 'myFirstFont';
     font-size: 50px;
 }
 
-
-.room{
+/* ====== Layout Components ====== */
+/* Room visibility toggle */
+.room {
     display: none;
-}
-.room.visible{
+}   
+.room.visible {
     display: block;
 }
 
-
-.header{
+/* ====== Header Styles ====== */
+/* Main header container */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,8 +43,8 @@ h2{
     border: solid #292643;
 }
 
-
-.header ul{
+/* Header navigation list */
+.header ul {
     display: inline;
     padding-top: 30px;
     margin-right: 30px;
@@ -40,7 +52,9 @@ h2{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#custom-button{
+/* ====== Button Styles ====== */
+/* Primary action button */
+#custom-button {
     margin-right: 150px;
     margin-bottom: 30px;
     display: inline-block;
@@ -56,128 +70,200 @@ h2{
     color: #ddd;
 }
 
-#custom-button:hover{
+/* Primary button hover state */
+#custom-button:hover {
     color: #b32323;
     background-color: transparent;
     border-color: #b32323;
 }
 
-
-#goback{
+/* Back navigation button */
+#goback {
     margin-left: 100px;
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-   
     border: solid 2px #b32323;
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
     color: #e5d6d6;
     background-color: #292643;
     border-color: #292643;
 }
-#goback{
+
+/* Back button link styling */
+#goback {
     text-decoration: none;
     color: #e5d6d6;
 }
 
-#goback:hover{
-     background-color: #b32323;
+/* Back button hover state */
+#goback:hover {
+    background-color: #b32323;
 }
-#btnGoBack{
+
+/* Back button positioning */
+#btnGoBack {
     margin-left: -10px;
     margin-top: 10px;
 }
 
-a{
+/* ====== Link Styles ====== */
+/* General link styling */
+a {
     text-decoration: none;
 }
 
-.room img{
+/* ====== Content Elements ====== */
+/* Room images */
+.room img {
     width: 250px;
 }
 
+/* ====== Control Panel ====== */
+/* Button container */
+#battons {
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    color: #ddd;
+    font-size: 20px;
+    display: flex; /* Enable flex layout */
+    align-items: center; /* Vertical alignment */
+}
 
-#battons{
-    display: flex;
+/* Button container divs */
+#battons div {
     justify-content: space-between;
     padding: 10px 50px 10px 50px;
     color: #ddd;
     font-size: 20px;
 }
 
-.header img{
-     width: 20px 20px; 
+/* ====== Filter Controls ====== */
+/* Filter buttons */
+.filters button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 2px #b32323;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #e4e1ff;
+    background-color: #b32323;
+    border-color: #b32323;
 }
 
-.header li::before{
+/* Filter container */
+.filters {
+    color: #ddd;
+    font-weight: bold;
+    border-radius: 35px;
+    margin-right: 30px;
+    background-color: #292643;
+}
+
+/* Button padding in control sections */
+.left_batton button, .filters button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+}
+
+/* Filter button default state */
+.filter-btn {
+    border: solid 2px #ffffff00;
+}
+
+/* Filter button hover state */
+.filter-btn:hover {
+    color: #b32323;
+    background-color: transparent;
+    border: solid 2px #b32323;
+    border-color: #b32323;
+}
+
+/* Left button container */
+.left_batton {
+    display: flex; /* For potential future content */
+}
+
+/* ====== Header Elements ====== */
+/* Header images */
+.header img {
+    width: 20px 20px; 
+}
+
+/* Navigation separator styling */
+.header li::before {
     content: "|";
-    color:#bbaab8;
+    color: #bbaab8;
     padding-right: 35px;
     padding-left: 35px;
-
 }
 
-.header li:first-child::before{
+/* Remove separator from first navigation item */
+.header li:first-child::before {
     content: "";
     padding: 0;
 }
 
-.header li{
+/* Navigation list items */
+.header li {
     transition: all 0.3s ease;
     font-family: 'Times New Roman', Times, serif;
     display: inline;
 }
 
-.header a{
+/* Header link colors */
+.header a {
     color: #bbaab8;
 }
 
-.header a:hover{
-    
+/* Header link hover state */
+.header a:hover {
     text-decoration: underline;
     color: #bbaab8;
     transition: all 0.3s ease; 
 }
 
-nav ul li a{
+/* Main navigation links */
+nav ul li a {
     color: #bbaab8;
     text-decoration: none;
 }
 
-
-
-.tabelle{
+/* ====== Table Layout ====== */
+/* Table container */
+.tabelle {
     margin-left: 8%;
     margin-right: 0%;
 }
 
-
-.tabelle td{
-
+/* Table cells */
+.tabelle td {
     justify-content: space-between;
     display: inline-table;
-    padding: 10px 10px 10px 10px;
-    border: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
     border: 2px #151822;
-    
-   
 }
 
-.tabelle td:hover{
+/* Table cell hover state */
+.tabelle td:hover {
     border-radius: 15px;
     transition: all 0.3s ease; 
     background-color: #bbaab8;
-
 }
 
-.tabelle div{
-
+/* Table cell content divs */
+.tabelle div {
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
@@ -186,61 +272,28 @@ nav ul li a{
     border-radius: 15px; 
     margin-bottom: 10px;
     color: #ddd;
-    
 }
 
-td[room-status="verfügbar"] div{
+/* ====== Room Status Styling ====== */
+/* Available room styling */
+td[room-status="verfügbar"] div {
     border: 2px solid #0dc116c9;
 }
 
-td[room-status="verfügbar"] div:hover{
+/* Available room hover state */
+td[room-status="verfügbar"] div:hover {
     background-color: #0dc116c9;
     transition: all 0.3s ease;
 }
 
+/* Occupied room hover state */
 td[room-status="belegt"] div:hover {
-    background-color: #b32323; /* Зеленый цвет при наведении на div */
+    background-color: #b32323; /* Green color on hover */
     transition: all 0.3s ease;
 }
 
-.tabelle img{
-
+/* Table images */
+.tabelle img {
     border-radius: 10px;
     border: 1px solid #151822;
-    
-
 }
-
-.filters button{
-    
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-   
-    border: solid 2px #b32323;
-    border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-
-    color: #e4e1ff;
-    background-color: #b32323;
-    border-color: #b32323;
-}
-.filters{
-    font-family: 'Times New Roman', Times, serif;
-    color: #ddd;
-    font-weight: bold;
-}
-
-.filters{
-    margin-left: 1000px;
-}
-
-
-
-
-
-
-

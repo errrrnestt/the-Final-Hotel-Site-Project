@@ -1,29 +1,23 @@
-@font-face{
-    font-family: 'myFirstFont';
-    src: url(../font/MountainsofChristmas.ttf);
-}
-
-h1{
-    font-family: 'myFirstFont';
-
-}
-
-
-body{
-    
+/* ====== General Styles ====== */
+/* Body background with image */
+body {
+    background-color: #1e212f;
     margin: 0;
     padding: 0;
     background-image: url(../Photos/background.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 0;
     min-height: 100vh;
 }
 
-
-
-
+/* ====== Typography ====== */
+/* Custom font declaration */
+@font-face {
+    font-family: 'myFirstFont';
+    src: url(../font/MountainsofChristmas.ttf);
+}
+/* ====== Header Styling ====== */
 header{
     display: flex;
     justify-content: space-between;
@@ -32,10 +26,13 @@ header{
     background-color: #151822;
     border: solid #292643;
 }
+
+/* ====== Logo Styling ====== */
 #logo{
     width: 20px 20px;
 }
 
+/* ====== Navigation Menu Styling ====== */
 .header ul{
     text-align: right;
     padding-top: 30px;
@@ -57,14 +54,13 @@ header{
     margin-right: 100px;
 }
 
+/* ====== Customer Information Styling ====== */
 #kunde{
     font-size:20px;
-    
 }
 
 .form-group select{
     text-align: center;
-
 }
 
 #kunde option {
@@ -74,11 +70,10 @@ header{
     font-size: 16px;
 }
 
+/* ====== Breakfast Section Styling ====== */
 #fruhstück{
-    
     border-radius: 15px;
     display: flex;
-    /* Эта строка делает элементы параллельными друг другу */
     align-items: center; /* Опционально: выравнивает элементы по вертикали */
     border: 2px solid #000; /* Для видимости контейнера */
     background-color: #ffffff;
@@ -90,64 +85,62 @@ header{
     border: 2px solid #000; /* Для видимости контейнера */
     background-color: #ffffff;
     padding: 10px;
-
 }
 
+/* ====== Checkbox Styling ====== */
 #checkbox {
-    
-    text-align: lefts;
+    text-align: left;
     width: 20px;
     height: 20px;
     border: 2px solid #000;
     border-radius: 10px;
-
 }
 
-
+/* ====== Label Styling for Breakfast Section ====== */
 #fruhstück label{
-  color: #000;
-  padding-left: 30px;
-  padding-top: 5px;
-  font-weight: normal;
+    color: #000;
+    padding-left: 30px;
+    padding-top: 5px;
+    font-weight: normal;
     font-size: medium;
 }
 
-
-#fruhstück imput{
+/* ====== Input Styling ====== */
+#fruhstück input{
     position: relative;
     width: 20px;
     height: 20px;
     border: 2px solid #000;
     border-radius: 4px;
     cursor: pointer;
-    
 }
 
-#kunde  d{
+/* ====== Customer Information Dropdown Styling ====== */
+#kunde d{
     padding: 10px;
     background-color: #ffffff; /* Цвет фона опций */
     color: #333; /* Цвет текста */
     font-size: 16px;
-    
 }
 
-
+/* ====== Navigation Menu Links Styling ====== */
 .header li{
     transition: all 0.3s ease;
     font-family: 'Times New Roman', Times, serif;
     display: inline;
 }
+
 .header a{
     color: #bbaab8;
 }
 
+/* ====== Navigation Menu Hover Effect ====== */
 .header li:hover{
     text-decoration: underline;
     color: #bbaab8;
 }
 
-
-
+/* ====== Logo Text Styling ====== */
 #logo{
     color: #bbaab8;
     font-size: 40px;
@@ -155,19 +148,20 @@ header{
     padding-top: 30px;
 }
 
-
-
+/* ====== Navigation Link Styling ====== */
 nav ul li a{
     text-decoration: none;
 }
 
+/* ====== Heading Styling ====== */
 h1{
     color: #bbaab8;
-    
     text-align: center;
     padding-top: -20px;
+    font-family: 'myFirstFont';
 }
 
+/* ====== Go Back Button Styling ====== */
 #goback{
     margin-left: 130px;
     margin-bottom: 3px;
@@ -175,52 +169,53 @@ h1{
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-   
     border: solid 2px #b32323;
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
     color: #e5d6d6;
     background-color: #292643;
     border-color: #292643;
 }
+
 #goback{
     text-decoration: none;
     color: #e5d6d6;
 }
 
+/* ====== Go Back Button Hover Effect ====== */
 #goback:hover{
-     background-color: #b32323;
+    background-color: #b32323;
 }
+
+/* ====== Button Styling ====== */
 #btnGoBack{
     margin-left: 20px;
     margin-top: 10px;
-}   
+}
 
+/* ====== Form Styling ====== */
 form{
     border: auto;
     padding: 30px;
     margin: auto;
     width: 600px;
     margin-bottom: 30px; 
-
 }
 
 form:hover{
-
     background-color: #bbaab85b;
     border-radius: 25px;
     transition: all 1s ease;
-   
 }
 
+/* ====== Form Group Styling ====== */
 .form-group{
     margin-bottom: 20px;
-    
 }
 
+/* ====== Input Fields Styling ====== */
 input,select,textarea{
     width: 100%;
     padding: 10px;
@@ -228,9 +223,9 @@ input,select,textarea{
     border-radius: 10px;
     padding-left: 10px;
     box-sizing: border-box;
-    
 }
 
+/* ====== Label Styling ====== */
 label{
     color: #e9dddd;
     max-width: 200px;
@@ -238,15 +233,16 @@ label{
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 20px;
-   
 }
 
+/* ====== Error Message Styling ====== */
 #error {
     text-align: center;
     color: red; 
     font-weight: bold; 
 }
 
+/* ====== Booking Button Styling ====== */
 .buchungBtn{
     margin-top: 4px;
     display: inline-block;
@@ -259,25 +255,20 @@ label{
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
 }
 
 .buchungBtn a{
     color: #b32323;
 }
 
+/* ====== Booking Button Hover Effect ====== */
 .buchungBtn:hover{
     color: #b32323;
     background-color: #e19c9c;
     border-color: #b32323;
 }
 
-
-
-a{
-    text-decoration: none;
-}
-
+/* ====== Cancel Button Styling ====== */
 .cancel{
     margin-top: 4px;
     display: inline-block;
@@ -290,17 +281,20 @@ a{
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
 }
+
 .cancel a{
     color: #b32323;
 }
+
+/* ====== Cancel Button Hover Effect ====== */
 .cancel:hover{
     color: #b32323;
     background-color: #e19c9c;
     border-color: #b32323;
 }
 
+/* ====== Style for Mitfr (With Breakfast) Section ====== */
 .mitfr{
     color: antiquewhite;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -309,6 +303,8 @@ a{
     background-color: #b32323;
     font-weight: bold;
 }
+
+/* ====== Style for Ohnefr (Without Breakfast) Section ====== */
 .ohnefr{
     color: antiquewhite;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -318,22 +314,27 @@ a{
     font-weight: bold;
 }
 
+/* ====== Hover Effect for Mitfr Section ====== */
 .mitfr:hover{
     color: #b32323;
     background-color: #e19c9c;
     border-color: #b32323;
 }
+
+/* ====== Hover Effect for Ohnefr Section ====== */
 .ohnefr:hover{
     color: #b32323;
     background-color: #e19c9c;
     border-color: #b32323;
 }
 
+/* ====== Hinweis Section Styling ====== */
 .hinweis{
     font-family: 'myFirstFont';
     font-size: 50px;
 }
 
+/* ====== Hinweis Text Styling ====== */
 .hinweis{
     color: #bbaab8;
     text-align: center;
